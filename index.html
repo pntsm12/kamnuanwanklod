@@ -107,17 +107,14 @@ header{position:sticky;top:0;z-index:100;height:52px;display:flex;align-items:ce
 .dark-btn:hover{border-color:var(--b1);color:var(--t0);background:var(--s1);}
 .dark-btn svg{width:14px;height:14px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
 
-.ad-bar{display:flex;justify-content:center;padding:8px 16px;background:var(--s1);border-bottom:1px solid var(--b0);}
-.ad-728{width:100%;max-width:728px;height:90px;background:var(--s0);border:1px dashed var(--b1);border-radius:6px;display:flex;align-items:center;justify-content:center;color:var(--t2);font-size:12px;}
-@media(max-width:600px){.ad-728{height:60px;}}
 
 .page{max-width:600px;margin:0 auto;padding:28px 20px 72px;}
 .page-hd{margin-bottom:20px;}
 .page-hd h1{font-family:'Noto Serif Thai',serif;font-size:clamp(22px,4vw,30px);font-weight:700;color:var(--t0);line-height:1.1;letter-spacing:-.3px;white-space:nowrap;}
 @media(max-width:380px){.page-hd h1{white-space:normal;font-size:22px;}}
 .page-hd p{margin-top:6px;font-size:14px;color:var(--t1);}
-.badge{display:inline-flex;align-items:center;gap:5px;margin-top:8px;padding:3px 10px;background:var(--s1);border:1px solid var(--b0);border-radius:20px;font-size:11px;color:var(--t2);}
-.badge strong{color:var(--t1);font-weight:600;}
+.note-box{background:var(--s1);border:1px solid var(--b0);border-radius:var(--r);padding:10px 14px;font-size:12px;color:var(--t2);line-height:1.7;margin-top:8px;text-align:center;}
+.note-box strong{color:var(--t1);}
 
 /* Method tabs */
 .method-tabs{display:flex;gap:6px;margin-bottom:14px;}
@@ -131,7 +128,7 @@ header{position:sticky;top:0;z-index:100;height:52px;display:flex;align-items:ce
 .field{margin-bottom:14px;}
 .field:last-child{margin-bottom:0;}
 .lbl{font-size:12px;font-weight:600;color:var(--t0);margin-bottom:6px;display:block;}
-.hint{font-size:11px;color:var(--t1);margin-top:4px;}
+.hint{font-size:11px;color:var(--t1);margin-top:8px;text-align:center;}
 
 /* Date picker */
 .date-row{display:flex;gap:8px;}
@@ -242,18 +239,10 @@ footer a{color:var(--t2);text-decoration:none;}footer a:hover{color:var(--t1);}
   </div>
 </header>
 
-<div class="ad-bar" role="complementary" aria-label="โฆษณา">
-  <div class="ad-728">
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-1063556443578237" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    <script>(adsbygoogle=window.adsbygoogle||[]).push({});</script>
-  </div>
-</div>
-
 <main id="main-content" class="page">
   <div class="page-hd">
     <h1>คำนวณวันคลอด อายุครรภ์</h1>
-    <p>รู้วันครบกำหนดคลอด อายุครรภ์ และพัฒนาการทารก</p>
-    <div class="badge">ใช้ <strong>กฎของ Naegele</strong> มาตรฐานสากล</div>
+    <p>กรอกวันแล้วรู้ทันทีว่าวันครบกำหนดคลอดคือวันไหน อายุครรภ์กี่สัปดาห์</p>
   </div>
 
   <!-- Method tabs -->
@@ -267,12 +256,12 @@ footer a{color:var(--t2);text-decoration:none;}footer a:hover{color:var(--t1);}
       <div class="field">
         <label class="lbl" id="dateLabel">วันแรกของประจำเดือนครั้งสุดท้าย (LMP)</label>
         <div class="date-row" role="group" aria-labelledby="dateLabel">
-          <div class="sel-wrap" style="flex:0.6">
+          <div class="sel-wrap" style="flex:0.5">
             <select id="inDay" aria-label="วัน">
               <option value="">วัน</option>
             </select>
           </div>
-          <div class="sel-wrap" style="flex:1.2">
+          <div class="sel-wrap" style="flex:0.9">
             <select id="inMonth" aria-label="เดือน">
               <option value="">เดือน</option>
             </select>
@@ -287,12 +276,13 @@ footer a{color:var(--t2);text-decoration:none;}footer a:hover{color:var(--t1);}
             </div>
           </div>
         </div>
-        <div class="hint" id="methodHint">วันแรกของรอบประจำเดือนล่าสุดที่จำได้ก่อนตั้งครรภ์</div>
+        <div class="hint" id="methodHint" style="text-align:center;">วันแรกของรอบประจำเดือนล่าสุด ก่อนที่จะตั้งครรภ์</div>
       </div>
     </div>
   </div>
 
   <button class="btn-calc" onclick="calculate()" type="button">คำนวณวันคลอด</button>
+  <div class="note-box">ผลลัพธ์เป็นการประมาณการ ควรปรึกษาแพทย์เพื่อยืนยันอีกครั้ง</div>
 
   <!-- Result -->
   <div class="result-box" id="resultBox" role="region" aria-label="ผลการคำนวณ">
@@ -337,7 +327,7 @@ footer a{color:var(--t2);text-decoration:none;}footer a:hover{color:var(--t1);}
         <div id="devList"></div>
       </div>
 
-      <p class="disclaimer">ผลลัพธ์เป็นการประมาณการ มีเพียง 5% ของทารกที่คลอดตรงกำหนด ควรปรึกษาแพทย์เพื่อยืนยันวันคลอดที่แน่นอน</p>
+
     </div>
   </div>
 
@@ -439,7 +429,7 @@ function setMethod(m){
   document.getElementById('tab-lmp').classList.toggle('on',m==='lmp');
   document.getElementById('tab-con').classList.toggle('on',m==='conception');
   document.getElementById('dateLabel').textContent=m==='lmp'?'วันแรกของประจำเดือนครั้งสุดท้าย (LMP)':'วันที่ตั้งครรภ์ (โดยประมาณ)';
-  document.getElementById('methodHint').textContent=m==='lmp'?'วันแรกของรอบประจำเดือนล่าสุดที่จำได้ก่อนตั้งครรภ์':'วันที่ตรวจพบหรือประมาณวันที่ตั้งครรภ์';
+  document.getElementById('methodHint').textContent=m==='lmp'?'วันแรกของรอบประจำเดือนล่าสุด ก่อนตั้งครรภ์':'วันที่ตรวจพบหรือประมาณวันที่ตั้งครรภ์';
   document.getElementById('resultBox').style.display='none';
 }
 
