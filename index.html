@@ -2,336 +2,233 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="google-site-verification" content="BcwokyN2W4FMCCIj4YbvGcFCJojtQgojttCnNHCTtL4">
-<title>คำนวณวันคลอด อายุครรภ์ออนไลน์ — กฎของ Naegele</title>
-<meta name="description" content="คำนวณวันครบกำหนดคลอดออนไลน์ฟรี รู้อายุครรภ์เป็นสัปดาห์ พัฒนาการทารกแต่ละไตรมาส ใช้กฎของ Naegele มาตรฐานสากล">
-<meta name="keywords" content="คำนวณวันคลอด, วันครบกำหนดคลอด, อายุครรภ์, ตั้งครรภ์, คำนวณอายุครรภ์">
-<meta name="robots" content="index, follow">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>คำนวณวันคลอด อายุครรภ์ — กฎของ Naegele</title>
+<meta name="description" content="คำนวณวันครบกำหนดคลอด รู้อายุครรภ์เป็นสัปดาห์ พัฒนาการทารกแต่ละไตรมาส ใช้กฎของ Naegele มาตรฐานสากล">
 <link rel="canonical" href="https://kamnuan.net/kamnuanwanklod/">
+<meta property="og:title" content="คำนวณวันคลอด อายุครรภ์ — กฎของ Naegele">
+<meta property="og:description" content="คำนวณวันครบกำหนดคลอด รู้อายุครรภ์เป็นสัปดาห์ และพัฒนาการทารกแต่ละไตรมาส">
 <meta property="og:type" content="website">
-<meta property="og:title" content="คำนวณวันคลอด อายุครรภ์ออนไลน์">
-<meta property="og:description" content="คำนวณวันครบกำหนดคลอดและอายุครรภ์ออนไลน์ฟรี พร้อมพัฒนาการทารก">
 <meta property="og:url" content="https://kamnuan.net/kamnuanwanklod/">
 <meta property="og:locale" content="th_TH">
-<meta property="og:site_name" content="คำนวณ">
-
 <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebApplication",
-      "name": "คำนวณวันคลอด อายุครรภ์",
-      "url": "https://kamnuan.net/kamnuanwanklod/",
-      "description": "เครื่องมือคำนวณวันครบกำหนดคลอดและอายุครรภ์ออนไลน์ฟรี ใช้กฎของ Naegele มาตรฐานสากล",
-      "applicationCategory": "HealthApplication",
-      "operatingSystem": "Any",
-      "offers": {"@type": "Offer", "price": "0", "priceCurrency": "THB"},
-      "inLanguage": "th",
-      "isAccessibleForFree": true
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "คำนวณวันคลอดยังไง",
-          "acceptedAnswer": {"@type": "Answer", "text": "ใช้กฎของ Naegele โดยนำวันแรกของประจำเดือนครั้งสุดท้าย (LMP) บวกไป 280 วัน (40 สัปดาห์) หรือบวก 7 วันแล้วลบ 3 เดือน วิธีนี้เป็นมาตรฐานสากลที่แพทย์ทั่วโลกใช้"}
-        },
-        {
-          "@type": "Question",
-          "name": "วันคลอดที่คำนวณได้แม่นยำแค่ไหน",
-          "acceptedAnswer": {"@type": "Answer", "text": "มีเพียง 5% ของทารกที่คลอดตรงวันกำหนด ส่วนใหญ่คลอดภายใน 2 สัปดาห์ก่อนหรือหลังกำหนด การอัลตราซาวด์ในไตรมาสแรกโดยวัด CRL แม่นยำกว่า ±3–5 วัน ควรปรึกษาแพทย์เพื่อยืนยันกำหนดคลอด"}
-        },
-        {
-          "@type": "Question",
-          "name": "อายุครรภ์นับยังไง",
-          "acceptedAnswer": {"@type": "Answer", "text": "นับจากวันแรกของประจำเดือนครั้งสุดท้าย ไม่ใช่วันที่ตั้งครรภ์ ดังนั้นตอนตรวจพบการตั้งครรภ์อายุครรภ์มักอยู่ที่ประมาณ 4–6 สัปดาห์แล้ว การตั้งครรภ์ปกติอยู่ที่ 37–42 สัปดาห์"}
-        },
-        {
-          "@type": "Question",
-          "name": "ไตรมาสของการตั้งครรภ์แบ่งยังไง",
-          "acceptedAnswer": {"@type": "Answer", "text": "ไตรมาสแรก สัปดาห์ที่ 1–12 อวัยวะสำคัญเริ่มก่อตัว ไตรมาสสอง สัปดาห์ที่ 13–27 ทารกเริ่มดิ้นและรู้สึกได้ ไตรมาสสาม สัปดาห์ที่ 28–40 ทารกเติบโตเต็มที่และเตรียมคลอด"}
-        },
-        {
-          "@type": "Question",
-          "name": "ควรฝากครรภ์ครั้งแรกเมื่อไหร่",
-          "acceptedAnswer": {"@type": "Answer", "text": "ควรฝากครรภ์ครั้งแรกเมื่ออายุครรภ์ประมาณ 8–12 สัปดาห์ หรือทันทีที่ทราบว่าตั้งครรภ์ เพื่อตรวจสุขภาพและได้รับคำแนะนำจากแพทย์ตั้งแต่เนิ่นๆ"}
-        }
-      ]
-    }
-  ]
-}
+{"@context":"https://schema.org","@graph":[{"@type":"WebApplication","name":"คำนวณวันคลอด อายุครรภ์","url":"https://kamnuan.net/kamnuanwanklod/","description":"คำนวณวันครบกำหนดคลอดและอายุครรภ์ ใช้กฎของ Naegele มาตรฐานสากล","applicationCategory":"HealthApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"THB"},"inLanguage":"th"},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"คำนวณวันคลอดยังไง","acceptedAnswer":{"@type":"Answer","text":"ใช้กฎของ Naegele นำวันแรกของประจำเดือนครั้งสุดท้าย (LMP) บวกไป 280 วัน (40 สัปดาห์) เป็นมาตรฐานที่แพทย์ทั่วโลกใช้"}},{"@type":"Question","name":"วันคลอดที่คำนวณได้แม่นยำแค่ไหน","acceptedAnswer":{"@type":"Answer","text":"มีเพียง 5% ของทารกที่คลอดตรงวันกำหนด ส่วนใหญ่คลอดภายใน 2 สัปดาห์ก่อนหรือหลัง ควรปรึกษาแพทย์เพื่อยืนยัน"}},{"@type":"Question","name":"อายุครรภ์นับยังไง","acceptedAnswer":{"@type":"Answer","text":"นับจากวันแรกของประจำเดือนครั้งสุดท้าย ไม่ใช่วันที่ตั้งครรภ์ ดังนั้นตอนตรวจพบมักอายุครรภ์ 4–6 สัปดาห์แล้ว"}},{"@type":"Question","name":"ไตรมาสของการตั้งครรภ์แบ่งยังไง","acceptedAnswer":{"@type":"Answer","text":"ไตรมาสแรก สัปดาห์ที่ 1–12 ไตรมาสสอง สัปดาห์ที่ 13–27 ไตรมาสสาม สัปดาห์ที่ 28–40"}}]}]}
 </script>
-
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1063556443578237" crossorigin="anonymous"></script>
 <link rel="icon" href="favicon.ico">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@700&family=Sarabun:wght@400;500;600&display=swap">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@700&family=Sarabun:wght@400;500;600&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+Thai:wght@700&family=Sarabun:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
-:root{
-  --bg:#F8F8F7;--s0:#FFFFFF;--s1:#F2F1EE;--s2:#ECEAE6;
-  --b0:rgba(0,0,0,0.07);--b1:rgba(0,0,0,0.13);
-  --t0:#18181A;--t1:#4A4946;--t2:#7A7872;
-  --ink:#18181A;--inv:#FFFFFF;--r:8px;--r-lg:12px;
-}
-[data-theme="dark"]{
-  --bg:#111110;--s0:#1C1C1A;--s1:#242422;--s2:#2C2B28;
-  --b0:rgba(255,255,255,0.07);--b1:rgba(255,255,255,0.13);
-  --t0:#EDEAE2;--t1:#A8A49C;--t2:#68655E;--ink:#EDEAE2;--inv:#111110;
-}
-:focus-visible{outline:2px solid #2563EB;outline-offset:2px;border-radius:4px;}
-:focus:not(:focus-visible){outline:none;}
-.skip-link{position:absolute;top:-100%;left:16px;background:var(--ink);color:var(--inv);padding:8px 16px;border-radius:0 0 var(--r) var(--r);font-size:13px;font-weight:600;text-decoration:none;z-index:999;transition:top .15s;}
-.skip-link:focus{top:0;}
-html{scroll-behavior:smooth;}
-body{font-family:'Sarabun',sans-serif;background:var(--bg);color:var(--t0);min-height:100vh;line-height:1.6;-webkit-font-smoothing:antialiased;transition:background .2s,color .2s;}
+html,body{background:#F7F7F5 !important;color:#18181A !important;-webkit-text-size-adjust:100%;}
+body{font-family:'Sarabun',sans-serif;min-height:100vh;-webkit-font-smoothing:antialiased;line-height:1.6;}
+:root{--bg:#F7F7F5;--s0:#FFFFFF;--s1:#EFEFEC;--b0:rgba(0,0,0,0.08);--b1:rgba(0,0,0,0.14);--t0:#18181A;--t1:#52504C;--t2:#96938C;--ink:#18181A;--inv:#FFFFFF;--r:10px;--r-lg:14px;}
 
-header{position:sticky;top:0;z-index:100;height:52px;display:flex;align-items:center;padding:0 20px;gap:12px;border-bottom:1px solid var(--b0);background:rgba(248,248,247,0.92);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);}
-[data-theme="dark"] header{background:rgba(17,17,16,0.92);}
-.logo{display:flex;align-items:center;gap:9px;text-decoration:none;flex:1;}
-.logo svg{width:30px;height:30px;display:block;flex-shrink:0;}
-.logo-t{display:flex;flex-direction:column;line-height:1.1;}
-.logo-th{font-family:'Noto Serif Thai',serif;font-size:15px;font-weight:700;color:var(--t0);}
-.logo-en{font-size:9px;font-weight:600;color:var(--t2);letter-spacing:2px;}
-.hdr-right{display:flex;align-items:center;gap:8px;}
-.back-btn{display:inline-flex;align-items:center;gap:5px;padding:5px 11px;border:1px solid var(--b0);border-radius:20px;font-family:'Sarabun',sans-serif;font-size:12px;color:var(--t1);text-decoration:none;transition:border-color .15s,color .15s;white-space:nowrap;}
-.back-btn:hover{border-color:var(--b1);color:var(--t0);}
+header{position:sticky;top:0;z-index:100;height:52px;display:flex;align-items:center;padding:0 16px;gap:10px;border-bottom:1px solid var(--b0);background:#F7F7F5 !important;}
+.logo{display:flex;align-items:center;gap:8px;text-decoration:none;flex:1;min-width:0;}
+.logo-icon{width:30px;height:30px;flex-shrink:0;}
+.logo-t{display:flex;flex-direction:column;line-height:1.15;}
+.logo-th{font-family:'Noto Serif Thai',serif;font-size:15px;font-weight:700;color:#18181A;}
+.logo-en{font-size:9px;font-weight:600;color:#96938C;letter-spacing:2px;}
+.back-btn{display:inline-flex;align-items:center;gap:4px;height:36px;padding:0 10px;border:1px solid var(--b0);border-radius:8px;background:#FFFFFF;font-family:'Sarabun',sans-serif;font-size:12px;font-weight:500;color:#52504C;text-decoration:none;white-space:nowrap;}
 .back-btn svg{width:13px;height:13px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
-.dark-btn{width:32px;height:32px;border:1px solid var(--b0);border-radius:6px;background:transparent;cursor:pointer;display:flex;align-items:center;justify-content:center;color:var(--t1);transition:all .15s;}
-.dark-btn:hover{border-color:var(--b1);color:var(--t0);background:var(--s1);}
-.dark-btn svg{width:14px;height:14px;stroke:currentColor;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
 
-
-.page{max-width:600px;margin:0 auto;padding:28px 20px 72px;}
+.page{width:100%;max-width:600px;margin:0 auto;padding:20px 16px 80px;}
 .page-hd{margin-bottom:20px;}
-.page-hd h1{font-family:'Noto Serif Thai',serif;font-size:clamp(22px,4vw,30px);font-weight:700;color:var(--t0);line-height:1.1;letter-spacing:-.3px;white-space:nowrap;}
-@media(max-width:380px){.page-hd h1{white-space:normal;font-size:22px;}}
-.page-hd p{margin-top:6px;font-size:14px;color:var(--t1);}
-.note-box{background:var(--s1);border:1px solid var(--b0);border-radius:var(--r);padding:10px 14px;font-size:12px;color:var(--t2);line-height:1.7;margin-top:8px;text-align:center;}
-.note-box strong{color:var(--t1);}
+.page-hd h1{font-family:'Noto Serif Thai',serif;font-size:clamp(20px,5vw,26px);font-weight:700;color:#18181A;line-height:1.2;}
+.page-hd p{margin-top:6px;font-size:14px;color:#52504C;}
 
-/* Method tabs */
-.method-tabs{display:flex;gap:6px;margin-bottom:14px;}
-.m-tab{flex:1;padding:7px;border:1px solid var(--b0);border-radius:var(--r);background:var(--s0);font-family:'Sarabun',sans-serif;font-size:13px;font-weight:500;color:var(--t1);cursor:pointer;transition:all .15s;text-align:center;}
-.m-tab:hover{border-color:var(--b1);color:var(--t0);}
-.m-tab.on{background:var(--ink);border-color:var(--ink);color:var(--inv);}
+.mode-tabs{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:16px;}
+.m-tab{height:44px;padding:0 10px;border:1px solid var(--b0);border-radius:var(--r);background:#FFFFFF;font-family:'Sarabun',sans-serif;font-size:14px;font-weight:500;color:#52504C;cursor:pointer;}
+.m-tab.on{background:#18181A;border-color:#18181A;color:#FFFFFF;}
 
-/* Card */
-.card{background:var(--s0);border:1px solid var(--b0);border-radius:var(--r-lg);overflow:hidden;margin-bottom:12px;}
-.card-body{padding:16px 18px;}
-.field{margin-bottom:14px;}
+.card{background:#FFFFFF;border:1px solid var(--b0);border-radius:var(--r-lg);overflow:hidden;margin-bottom:12px;width:100%;}
+.card-body{padding:16px;}
+.field{margin-bottom:16px;}
 .field:last-child{margin-bottom:0;}
-.lbl{font-size:12px;font-weight:600;color:var(--t0);margin-bottom:6px;display:block;}
-.hint{font-size:11px;color:var(--t1);margin-top:8px;text-align:center;}
+.lbl{display:block;font-size:13px;font-weight:600;color:#18181A;margin-bottom:7px;}
+.hint{font-size:11px;color:#96938C;margin-top:6px;text-align:center;line-height:1.5;}
 
-/* Date picker */
-.date-row{display:flex;gap:8px;}
-.sel-wrap{border:1px solid var(--b0);border-radius:var(--r);background:var(--s0);position:relative;flex:1;transition:border-color .15s;}
-.sel-wrap:focus-within{border-color:var(--b1);}
-.sel-wrap::after{content:'';position:absolute;right:8px;top:50%;transform:translateY(-50%) rotate(45deg);width:5px;height:5px;border-right:1.5px solid var(--t2);border-bottom:1.5px solid var(--t2);pointer-events:none;margin-top:-2px;}
-.sel-wrap select{width:100%;height:38px;border:none;background:transparent;padding:0 22px 0 10px;font-family:'Sarabun',sans-serif;font-size:14px;color:var(--t0);outline:none;cursor:pointer;-webkit-appearance:none;appearance:none;}
-.inp-row{display:flex;align-items:center;border:1px solid var(--b0);border-radius:var(--r);overflow:hidden;background:var(--s0);flex:1;transition:border-color .15s,box-shadow .15s;}
-.inp-row:focus-within{border-color:var(--b1);box-shadow:0 0 0 3px rgba(0,0,0,0.04);}
-[data-theme="dark"] .inp-row:focus-within{box-shadow:0 0 0 3px rgba(255,255,255,0.04);}
-.inp-row input{flex:1;height:38px;border:none;background:transparent;padding:0 10px;font-family:'Sarabun',sans-serif;font-size:14px;color:var(--t0);outline:none;min-width:0;}
-.inp-row input::placeholder{color:var(--t2);}
-.inp-suf{padding:0 10px;font-size:13px;color:var(--t2);background:var(--s1);height:38px;display:flex;align-items:center;border-left:1px solid var(--b0);flex-shrink:0;}
+.date-row{display:flex;gap:8px;width:100%;}
+.date-row .sel-wrap{flex:1;min-width:0;}
+.sel-wrap{position:relative;border:1px solid var(--b0);border-radius:var(--r);background:#FFFFFF;overflow:hidden;}
+.sel-wrap:focus-within{border-color:#18181A;}
+.sel-wrap select{width:100%;height:44px;padding:0 28px 0 10px;border:none;background:transparent;font-family:'Sarabun',sans-serif;font-size:16px;color:#18181A;outline:none;cursor:pointer;-webkit-appearance:none;appearance:none;}
+.sel-wrap::after{content:'';position:absolute;right:8px;top:50%;transform:translateY(-50%) rotate(45deg);width:5px;height:5px;border-right:2px solid #96938C;border-bottom:2px solid #96938C;pointer-events:none;margin-top:-2px;}
 
-.btn-calc{width:100%;height:46px;background:var(--ink);color:var(--inv);border:none;border-radius:var(--r);font-family:'Sarabun',sans-serif;font-size:15px;font-weight:600;cursor:pointer;transition:opacity .15s;margin-top:4px;}
-.btn-calc:hover{opacity:.87;}
+.inp-wrap{display:flex;align-items:stretch;border:1px solid var(--b0);border-radius:var(--r);background:#FFFFFF;overflow:hidden;min-height:44px;}
+.inp-wrap:focus-within{border-color:#18181A;}
+.inp-wrap input{flex:1;min-width:0;width:0;height:44px;padding:0 10px;border:none;background:transparent;font-family:'Sarabun',sans-serif;font-size:16px;color:#18181A;outline:none;}
+.inp-wrap input::placeholder{color:#C0BDB6;}
+.inp-sfx{display:flex;align-items:center;padding:0 10px;background:#EFEFEC;font-size:13px;color:#96938C;white-space:nowrap;flex-shrink:0;border-left:1px solid var(--b0);}
 
-/* Result */
-.result-box{background:var(--s0);border:1px solid var(--b0);border-radius:var(--r-lg);overflow:hidden;margin-top:14px;display:none;}
-.result-top{padding:20px;border-bottom:1px solid var(--b0);text-align:center;}
-.result-lbl{font-size:11px;font-weight:600;color:var(--t2);letter-spacing:.06em;text-transform:uppercase;margin-bottom:6px;}
-.result-date{font-family:'Noto Serif Thai',serif;font-size:clamp(22px,5vw,30px);font-weight:700;color:var(--t0);line-height:1.1;}
-.result-sub{font-size:13px;color:var(--t1);margin-top:6px;}
-.result-body{padding:16px 20px;}
+.btn-calc{width:100%;height:50px;margin-top:4px;background:#18181A;color:#FFFFFF;border:none;border-radius:var(--r-lg);font-family:'Sarabun',sans-serif;font-size:16px;font-weight:600;cursor:pointer;}
+.err-msg{display:none;margin-top:10px;font-size:13px;color:#DC2626;text-align:center;}
+.note-box{margin-top:10px;padding:12px 14px;background:#EFEFEC;border:1px solid var(--b0);border-radius:var(--r);font-size:12px;color:#96938C;line-height:1.6;text-align:center;}
 
-/* Stats grid */
-.stats-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-bottom:14px;}
-.stat-box{background:var(--s1);border-radius:var(--r);padding:12px;text-align:center;}
-.stat-num{font-family:'Noto Serif Thai',serif;font-size:24px;font-weight:700;color:var(--t0);}
-.stat-unit{font-size:11px;color:var(--t2);margin-top:1px;}
+.result-box{display:none;margin-top:16px;}
+.result-top{background:#18181A;color:#FFFFFF;border-radius:var(--r-lg);padding:20px 16px;text-align:center;margin-bottom:10px;}
+.result-label{font-size:13px;opacity:.7;margin-bottom:4px;}
+.result-date{font-family:'Noto Serif Thai',serif;font-size:28px;font-weight:700;line-height:1.2;}
+.result-sub{font-size:12px;opacity:.6;margin-top:8px;}
 
-/* Countdown */
-.countdown-box{background:var(--ink);color:var(--inv);border-radius:var(--r);padding:16px;text-align:center;margin-bottom:14px;}
-.countdown-num{font-family:'Noto Serif Thai',serif;font-size:40px;font-weight:700;line-height:1;}
-.countdown-msg{font-size:13px;margin-top:6px;opacity:.8;}
+.stats-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:10px;}
+.stat-card{background:#FFFFFF;border:1px solid var(--b0);border-radius:var(--r);padding:14px;text-align:center;}
+.stat-label{font-size:11px;color:#96938C;margin-bottom:4px;}
+.stat-num{font-family:'Noto Serif Thai',serif;font-size:28px;font-weight:700;color:#18181A;line-height:1.1;}
+.stat-unit{font-size:11px;color:#96938C;margin-top:2px;}
 
-/* Progress */
-.progress-wrap{margin-bottom:14px;}
-.progress-label{display:flex;justify-content:space-between;font-size:12px;color:var(--t1);margin-bottom:6px;}
-.progress-track{height:6px;background:var(--s2);border-radius:3px;overflow:hidden;}
-.progress-fill{height:100%;background:var(--ink);border-radius:3px;width:0%;transition:width .8s ease;}
+.progress-wrap{background:#FFFFFF;border:1px solid var(--b0);border-radius:var(--r);padding:14px;margin-bottom:10px;}
+.progress-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
+.progress-label{font-size:13px;font-weight:600;color:#18181A;}
+.progress-pct{font-size:13px;font-weight:600;color:#18181A;}
+.progress-track{height:8px;background:#EFEFEC;border-radius:4px;overflow:hidden;}
+.progress-bar{height:100%;background:#18181A;border-radius:4px;width:0%;transition:width .6s ease;}
 
-/* Dev info */
-.dev-wrap{border-top:1px solid var(--b0);padding-top:14px;}
-.dev-title{font-size:12px;font-weight:600;color:var(--t1);margin-bottom:10px;}
-.dev-item{display:flex;gap:8px;font-size:13px;color:var(--t1);margin-bottom:6px;line-height:1.6;}
-.dev-dot{width:4px;height:4px;background:var(--t2);border-radius:50%;flex-shrink:0;margin-top:8px;}
+.countdown-card{background:#FFFFFF;border:1px solid var(--b0);border-radius:var(--r);padding:14px;text-align:center;margin-bottom:10px;}
+.countdown-num{font-family:'Noto Serif Thai',serif;font-size:36px;font-weight:700;color:#18181A;}
+.countdown-unit{font-size:12px;color:#96938C;margin-top:2px;}
 
-.disclaimer{font-size:11px;color:var(--t2);text-align:center;margin-top:12px;line-height:1.7;}
+.dev-card{background:#FFFFFF;border:1px solid var(--b0);border-radius:var(--r-lg);overflow:hidden;margin-bottom:10px;}
+.dev-head{padding:12px 14px;border-bottom:1px solid var(--b0);background:#EFEFEC;}
+.dev-title{font-size:13px;font-weight:600;color:#18181A;}
+.dev-list{padding:12px 14px;display:flex;flex-direction:column;gap:8px;}
+.dev-item{display:flex;align-items:flex-start;gap:8px;font-size:13px;color:#52504C;line-height:1.6;}
+.dev-dot{width:6px;height:6px;border-radius:50%;background:#18181A;flex-shrink:0;margin-top:6px;}
 
-/* History */
-.hist-wrap{margin-top:14px;}
-.hist-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:8px;}
-.hist-lbl{font-size:12px;font-weight:600;color:var(--t1);}
-.hist-clr{font-size:12px;color:var(--t2);background:none;border:none;cursor:pointer;font-family:'Sarabun',sans-serif;padding:0;}
-.hist-clr:hover{color:var(--t1);}
-.hist-list{display:flex;flex-direction:column;gap:5px;}
-.h-item{background:var(--s0);border:1px solid var(--b0);border-radius:var(--r);padding:9px 13px;}
-.h-main{font-size:14px;font-weight:600;color:var(--t0);}
-.h-sub{font-size:11px;color:var(--t2);margin-top:2px;}
-.h-empty{font-size:13px;color:var(--t2);padding:12px;text-align:center;}
+.hist-wrap{margin-top:16px;}
+.hist-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;}
+.hist-lbl{font-size:13px;font-weight:600;color:#18181A;}
+.hist-clr{background:none;border:none;font-family:'Sarabun',sans-serif;font-size:12px;color:#96938C;cursor:pointer;}
+.hist-list{display:flex;flex-direction:column;gap:6px;}
+.h-empty{font-size:13px;color:#96938C;text-align:center;padding:16px;}
+.h-item{background:#FFFFFF;border:1px solid var(--b0);border-radius:var(--r);padding:12px 14px;}
+.h-main{font-size:15px;font-weight:600;color:#18181A;}
+.h-sub{font-size:12px;color:#96938C;margin-top:2px;}
 
-/* FAQ */
-.faq-wrap{margin-top:28px;border-top:1px solid var(--b0);padding-top:24px;}
-.faq-h2{font-family:'Noto Serif Thai',serif;font-size:18px;font-weight:700;color:var(--t0);margin-bottom:14px;}
+.faq-wrap{margin-top:28px;}
+.faq-title{font-family:'Noto Serif Thai',serif;font-size:20px;font-weight:700;color:#18181A;margin-bottom:12px;}
 .faq-item{border:1px solid var(--b0);border-radius:var(--r);overflow:hidden;margin-bottom:8px;}
-.faq-q{width:100%;padding:13px 16px;background:var(--s0);border:none;font-family:'Sarabun',sans-serif;font-size:14px;font-weight:500;color:var(--t0);text-align:left;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:10px;transition:background .15s;}
-.faq-q:hover{background:var(--s1);}
-.faq-q svg{width:14px;height:14px;stroke:var(--t2);stroke-width:2;fill:none;stroke-linecap:round;flex-shrink:0;transition:transform .2s;}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;padding:14px;background:#FFFFFF;border:none;cursor:pointer;font-family:'Sarabun',sans-serif;font-size:14px;font-weight:500;color:#18181A;text-align:left;gap:12px;min-height:48px;}
+.faq-q svg{width:16px;height:16px;stroke:#96938C;stroke-width:2;fill:none;flex-shrink:0;transition:transform .2s;}
 .faq-q[aria-expanded="true"] svg{transform:rotate(180deg);}
-.faq-a{padding:0 16px;font-size:13px;color:var(--t1);line-height:1.8;max-height:0;overflow:hidden;transition:max-height .25s ease,padding .25s ease;}
-.faq-a.open{max-height:300px;padding:0 16px 14px;}
+.faq-a{max-height:0;overflow:hidden;font-size:14px;color:#52504C;line-height:1.7;transition:max-height .25s ease,padding .25s ease;padding:0 14px;background:#EFEFEC;}
+.faq-a.open{max-height:400px;padding:14px;}
+.faq-a strong{color:#18181A;}
 
-/* Info */
-.info-wrap{margin-top:20px;border-top:1px solid var(--b0);padding-top:20px;}
-.info-wrap h2{font-family:'Noto Serif Thai',serif;font-size:16px;font-weight:700;color:var(--t0);margin-bottom:6px;}
-.info-wrap p{font-size:13px;color:var(--t1);line-height:1.8;margin-bottom:14px;}
+.info-wrap{margin-top:28px;padding-top:24px;border-top:1px solid var(--b0);}
+.info-wrap h2{font-family:'Noto Serif Thai',serif;font-size:16px;font-weight:700;color:#18181A;margin-bottom:8px;margin-top:20px;}
+.info-wrap h2:first-child{margin-top:0;}
+.info-wrap p{font-size:14px;color:#52504C;line-height:1.7;}
 
-/* Related */
-.related-wrap{margin-top:20px;border-top:1px solid var(--b0);padding-top:20px;}
-.related-lbl{font-size:11px;font-weight:600;color:var(--t2);letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;}
-.related-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:6px;}
-@media(max-width:400px){.related-grid{grid-template-columns:1fr;}}
-.related-card{display:flex;align-items:center;gap:10px;padding:10px 13px;background:var(--s0);border:1px solid var(--b0);border-radius:var(--r);text-decoration:none;color:var(--t0);transition:border-color .14s,background .14s;}
-.related-card:hover{border-color:var(--b1);background:var(--s1);}
-.related-ico{width:28px;height:28px;background:var(--ink);border-radius:6px;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
-.related-ico svg{width:12px;height:12px;stroke:var(--inv);stroke-width:1.75;fill:none;stroke-linecap:round;stroke-linejoin:round;}
-.related-name{font-size:12px;font-weight:500;}
+.related-wrap{margin-top:28px;padding-top:24px;border-top:1px solid var(--b0);}
+.related-title{font-size:11px;font-weight:600;color:#96938C;letter-spacing:.06em;text-transform:uppercase;margin-bottom:10px;}
+.related-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.related-card{display:flex;align-items:center;gap:10px;padding:12px;background:#FFFFFF;border:1px solid var(--b0);border-radius:var(--r);text-decoration:none;}
+.related-ico{width:32px;height:32px;border-radius:8px;background:#18181A;display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.related-ico svg{width:15px;height:15px;stroke:#FFFFFF;stroke-width:2;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+.related-name{font-size:13px;font-weight:500;color:#18181A;}
 
-footer{border-top:1px solid var(--b0);padding:20px;text-align:center;font-size:12px;color:var(--t2);}
-footer a{color:var(--t2);text-decoration:none;}footer a:hover{color:var(--t1);}
-@media(max-width:480px){header,.page{padding-left:16px;padding-right:16px;}}
+footer{border-top:1px solid var(--b0);padding:20px 16px;text-align:center;font-size:12px;color:#96938C;line-height:2;}
+footer a{color:#96938C;text-decoration:none;}
 </style>
 </head>
 <body>
-<a class="skip-link" href="#main-content">ข้ามไปเนื้อหาหลัก</a>
+
 <header role="banner">
   <a class="logo" href="/" aria-label="คำนวณ หน้าหลัก">
-    <svg viewBox="0 0 30 30" fill="none" aria-hidden="true"><rect width="30" height="30" rx="6" fill="var(--ink)"/><text x="4" y="22" font-family="Arial Black,sans-serif" font-size="20" font-weight="900" fill="var(--inv)">K</text><text x="13" y="25" font-family="Arial,sans-serif" font-size="7" font-weight="700" fill="var(--inv)">+x=</text></svg>
-    <div class="logo-t"><span class="logo-th">คำนวณ</span><span class="logo-en">KAMNUAN</span></div>
+    <svg class="logo-icon" viewBox="0 0 30 30" fill="none">
+      <rect width="30" height="30" rx="6" fill="#18181A"/>
+      <text x="4" y="22" font-family="Arial Black,sans-serif" font-size="20" font-weight="900" fill="#FFFFFF">K</text>
+      <text x="13" y="25" font-family="Arial,sans-serif" font-size="7" font-weight="700" fill="#FFFFFF">+×=</text>
+    </svg>
+    <div class="logo-t">
+      <span class="logo-th">คำนวณ</span>
+      <span class="logo-en">KAMNUAN</span>
+    </div>
   </a>
-  <div class="hdr-right">
-    <a class="back-btn" href="/" aria-label="กลับไปดูเครื่องมือทั้งหมด"><svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="15 18 9 12 15 6"/></svg>เครื่องมือทั้งหมด</a>
-    <button class="dark-btn" id="darkBtn" onclick="toggleDark()" aria-label="สลับโหมดสีเข้ม/สว่าง" type="button">
-      <svg id="iSun" style="display:none" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/></svg>
-      <svg id="iMoon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
-    </button>
-  </div>
+  <a class="back-btn" href="/"><svg viewBox="0 0 24 24"><polyline points="15 18 9 12 15 6"/></svg>เครื่องมือทั้งหมด</a>
 </header>
 
-<main id="main-content" class="page">
+<div class="page">
   <div class="page-hd">
     <h1>คำนวณวันคลอด อายุครรภ์</h1>
-    <p>กรอกวันแล้วรู้ทันทีว่าวันครบกำหนดคลอดคือวันไหน อายุครรภ์กี่สัปดาห์</p>
+    <p>กรอกวันแล้วรู้ทันทีว่าครบกำหนดคลอดวันไหน</p>
   </div>
 
-  <!-- Method tabs -->
-  <div class="method-tabs" role="group" aria-label="วิธีคำนวณ">
-    <button class="m-tab on" id="tab-lmp" onclick="setMethod('lmp')" type="button">จากประจำเดือนครั้งสุดท้าย</button>
-    <button class="m-tab" id="tab-con" onclick="setMethod('conception')" type="button">จากวันที่ตั้งครรภ์</button>
+  <div class="mode-tabs">
+    <button class="m-tab on" id="tab-lmp" onclick="setMethod('lmp')" type="button">จากวันประจำเดือน</button>
+    <button class="m-tab" id="tab-con" onclick="setMethod('conception')" type="button">จากวันตั้งครรภ์</button>
   </div>
 
-  <div class="card">
-    <div class="card-body">
-      <div class="field">
-        <label class="lbl" id="dateLabel">วันแรกของประจำเดือนครั้งสุดท้าย (LMP)</label>
-        <div class="date-row" role="group" aria-labelledby="dateLabel">
-          <div class="sel-wrap" style="flex:0.5">
-            <select id="inDay" aria-label="วัน">
-              <option value="">วัน</option>
+  <div class="card"><div class="card-body">
+    <div class="field">
+      <label class="lbl" id="dateLabel">วันแรกของประจำเดือนครั้งสุดท้าย</label>
+      <div class="date-row">
+        <div class="sel-wrap" style="flex:0.55">
+          <select id="inDay" aria-label="วัน"><option value="">วัน</option></select>
+        </div>
+        <div class="sel-wrap" style="flex:0.9">
+          <select id="inMonth" aria-label="เดือน"><option value="">เดือน</option></select>
+        </div>
+        <div class="inp-wrap" style="flex:1">
+          <input type="number" id="inYear" min="2000" max="2990" inputmode="numeric">
+          <div class="sel-wrap" style="border:none;border-radius:0;border-left:1px solid var(--b0);flex-shrink:0;width:76px;">
+            <select id="yearEra" style="height:44px;padding:0 24px 0 8px;font-size:14px;">
+              <option value="BE">พ.ศ.</option>
+              <option value="CE">ค.ศ.</option>
             </select>
-          </div>
-          <div class="sel-wrap" style="flex:0.9">
-            <select id="inMonth" aria-label="เดือน">
-              <option value="">เดือน</option>
-            </select>
-          </div>
-          <div class="inp-row" style="flex:0.9">
-            <input type="number" id="inYear" placeholder="2568" min="1900" max="2580" inputmode="numeric" aria-label="ปี">
-            <div class="sel-wrap" style="border:none;border-left:1px solid var(--b0);border-radius:0;flex-shrink:0;width:64px;">
-              <select id="yearEra" aria-label="ระบบปี" style="font-size:12px;padding:0 18px 0 6px;">
-                <option value="BE">พ.ศ.</option>
-                <option value="CE">ค.ศ.</option>
-              </select>
-            </div>
           </div>
         </div>
-        <div class="hint" id="methodHint" style="text-align:center;">วันแรกของรอบประจำเดือนล่าสุด ก่อนที่จะตั้งครรภ์</div>
       </div>
+      <div class="hint" id="methodHint">วันแรกของรอบประจำเดือนก่อนตั้งครรภ์</div>
     </div>
-  </div>
+    <button class="btn-calc" onclick="calculate()" type="button">คำนวณวันคลอด</button>
+    <div class="err-msg" id="calcError"></div>
+  </div></div>
+  <div class="note-box">ผลลัพธ์เป็นการประมาณการ ควรปรึกษาแพทย์เพื่อยืนยันกำหนดคลอด</div>
 
-  <button class="btn-calc" onclick="calculate()" type="button">คำนวณวันคลอด</button>
-  <div class="note-box">ผลลัพธ์เป็นการประมาณการ ควรปรึกษาแพทย์เพื่อยืนยันอีกครั้ง</div>
-
-  <!-- Result -->
-  <div class="result-box" id="resultBox" role="region" aria-label="ผลการคำนวณ">
+  <div class="result-box" id="resultBox">
     <div class="result-top">
-      <div class="result-lbl">วันครบกำหนดคลอด</div>
-      <div class="result-date" id="dueDateBig">–</div>
+      <div class="result-label">กำหนดคลอด</div>
+      <div class="result-date" id="dueDateBig">—</div>
       <div class="result-sub" id="resultSub"></div>
     </div>
-    <div class="result-body">
-      <!-- Countdown -->
-      <div class="countdown-box" id="countdownBox">
-        <div class="countdown-num" id="countdownNum">–</div>
-        <div class="countdown-msg" id="countdownMsg"></div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="stat-label">อายุครรภ์ตอนนี้</div>
+        <div class="stat-num" id="weeksPreg">—</div>
+        <div class="stat-unit">สัปดาห์ <span id="daysPreg"></span></div>
       </div>
-
-      <!-- Progress -->
-      <div class="progress-wrap">
-        <div class="progress-label">
-          <span>ความคืบหน้าการตั้งครรภ์</span>
-          <span id="progressPct">0%</span>
-        </div>
-        <div class="progress-track" aria-hidden="true">
-          <div class="progress-fill" id="progressBar"></div>
-        </div>
+      <div class="stat-card">
+        <div class="stat-label">ไตรมาสที่</div>
+        <div class="stat-num" id="trimester">—</div>
+        <div class="stat-unit" id="trimesterSub"></div>
       </div>
+    </div>
 
-      <!-- Stats -->
-      <div class="stats-grid">
-        <div class="stat-box">
-          <div class="stat-num" id="weeksPreg">–</div>
-          <div class="stat-unit">สัปดาห์ <span id="daysPreg"></span></div>
-        </div>
-        <div class="stat-box">
-          <div class="stat-num" id="trimester">–</div>
-          <div class="stat-unit">ไตรมาสที่ <span id="trimesterSub"></span></div>
-        </div>
+    <div class="countdown-card">
+      <div class="stat-label">เหลืออีก</div>
+      <div class="countdown-num" id="countdownNum">—</div>
+      <div class="countdown-unit" id="countdownMsg"></div>
+    </div>
+
+    <div class="progress-wrap">
+      <div class="progress-header">
+        <span class="progress-label">ความคืบหน้าการตั้งครรภ์</span>
+        <span class="progress-pct" id="progressPct">0%</span>
       </div>
+      <div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
+    </div>
 
-      <!-- Development -->
-      <div class="dev-wrap">
-        <div class="dev-title" id="devTitle"></div>
-        <div id="devList"></div>
-      </div>
-
-
+    <div class="dev-card">
+      <div class="dev-head"><div class="dev-title" id="devTitle">พัฒนาการทารก</div></div>
+      <div class="dev-list" id="devList"></div>
     </div>
   </div>
 
-  <!-- History -->
   <div class="hist-wrap">
     <div class="hist-head">
       <span class="hist-lbl">ประวัติการคำนวณ</span>
@@ -340,97 +237,76 @@ footer a{color:var(--t2);text-decoration:none;}footer a:hover{color:var(--t1);}
     <div class="hist-list" id="histList"><div class="h-empty">ยังไม่มีประวัติ</div></div>
   </div>
 
-  <!-- FAQ -->
   <div class="faq-wrap">
-    <h2 class="faq-h2">คำถามที่พบบ่อย</h2>
+    <h2 class="faq-title">คำถามที่พบบ่อย</h2>
     <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">คำนวณวันคลอดยังไง?<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
-      <div class="faq-a">ใช้ <strong>กฎของ Naegele</strong> โดยนำวันแรกของประจำเดือนครั้งสุดท้าย (LMP) บวกไป 280 วัน (40 สัปดาห์) หรือบวก 7 วันแล้วลบ 3 เดือน เป็นมาตรฐานสากลที่แพทย์ทั่วโลกใช้</div>
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">คำนวณวันคลอดยังไง<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="faq-a">ใช้ <strong>กฎของ Naegele</strong> นำวันแรกของประจำเดือนครั้งสุดท้าย (LMP) บวกไป 280 วัน (40 สัปดาห์) หรือบวก 7 วันแล้วลบ 3 เดือน เป็นมาตรฐานสากลที่แพทย์ทั่วโลกใช้มากว่า 200 ปี</div>
     </div>
     <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">วันคลอดที่คำนวณได้แม่นยำแค่ไหน?<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
-      <div class="faq-a">มีเพียง <strong>5%</strong> ของทารกที่คลอดตรงวันกำหนด ส่วนใหญ่คลอดภายใน 2 สัปดาห์ก่อนหรือหลัง การอัลตราซาวด์ไตรมาสแรก (CRL) แม่นยำกว่า ±3–5 วัน ควรปรึกษาแพทย์เพื่อยืนยัน</div>
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">วันคลอดที่คำนวณได้แม่นยำแค่ไหน<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="faq-a">มีเพียง <strong>5%</strong> ของทารกที่คลอดตรงวันกำหนด ส่วนใหญ่คลอดภายใน 2 สัปดาห์ก่อนหรือหลัง การอัลตราซาวด์ไตรมาสแรก (วัด CRL) แม่นยำกว่า ±3–5 วัน ควรปรึกษาแพทย์เพื่อยืนยัน</div>
     </div>
     <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">อายุครรภ์นับยังไง?<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
-      <div class="faq-a">นับจากวันแรกของประจำเดือนครั้งสุดท้าย ไม่ใช่วันที่ตั้งครรภ์ ดังนั้นตอนตรวจพบการตั้งครรภ์มักอายุครรภ์ประมาณ <strong>4–6 สัปดาห์</strong>แล้ว การตั้งครรภ์ปกติอยู่ที่ 37–42 สัปดาห์</div>
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">อายุครรภ์นับยังไง<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="faq-a">นับจาก<strong>วันแรกของประจำเดือนครั้งสุดท้าย</strong> ไม่ใช่วันที่ตั้งครรภ์ ดังนั้นตอนตรวจพบการตั้งครรภ์ อายุครรภ์มักอยู่ที่ 4–6 สัปดาห์แล้ว การตั้งครรภ์ปกติ 37–42 สัปดาห์</div>
     </div>
     <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">ไตรมาสของการตั้งครรภ์แบ่งยังไง?<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
-      <div class="faq-a"><strong>ไตรมาสแรก</strong> สัปดาห์ที่ 1–12 อวัยวะสำคัญเริ่มก่อตัว <strong>ไตรมาสสอง</strong> สัปดาห์ที่ 13–27 ทารกเริ่มดิ้นและรู้สึกได้ <strong>ไตรมาสสาม</strong> สัปดาห์ที่ 28–40 ทารกเติบโตเต็มที่ เตรียมคลอด</div>
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">ไตรมาสของการตั้งครรภ์แบ่งยังไง<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="faq-a"><strong>ไตรมาสแรก</strong> สัปดาห์ที่ 1–12 อวัยวะสำคัญเริ่มก่อตัว / <strong>ไตรมาสสอง</strong> สัปดาห์ที่ 13–27 ทารกเริ่มดิ้น ตรวจเพศได้ / <strong>ไตรมาสสาม</strong> สัปดาห์ที่ 28–40 ทารกเติบโตเต็มที่ เตรียมพร้อมคลอด</div>
     </div>
     <div class="faq-item">
-      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">ควรฝากครรภ์ครั้งแรกเมื่อไหร่?<svg viewBox="0 0 24 24" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg></button>
-      <div class="faq-a">ควรฝากครรภ์เมื่ออายุครรภ์ประมาณ <strong>8–12 สัปดาห์</strong> หรือทันทีที่ทราบว่าตั้งครรภ์ เพื่อรับการตรวจและคำแนะนำจากแพทย์ตั้งแต่เนิ่นๆ</div>
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false" type="button">ควรฝากครรภ์ครั้งแรกเมื่อไหร่<svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+      <div class="faq-a">ควรฝากครรภ์ครั้งแรกเมื่อ<strong>อายุครรภ์ 8–12 สัปดาห์</strong> เพื่อตรวจยืนยันการตั้งครรภ์ คำนวณกำหนดคลอดที่แม่นยำ และคัดกรองความเสี่ยงต่างๆ ยิ่งเร็วยิ่งดีครับ</div>
     </div>
   </div>
 
-  <!-- Info -->
   <div class="info-wrap">
     <h2>กฎของ Naegele คืออะไร</h2>
-    <p>พัฒนาโดย Dr. Franz Karl Naegele ในปี ค.ศ. 1812 เป็นสูตรคำนวณวันครบกำหนดคลอดที่ใช้มาตลอดกว่า 200 ปี โดยถือว่าการตั้งครรภ์ใช้เวลา 280 วัน (40 สัปดาห์) นับจากวันแรกของประจำเดือนครั้งสุดท้าย แม้จะมีอัลตราซาวด์แล้ว แพทย์ยังคงใช้สูตรนี้เป็นจุดเริ่มต้นในการประเมิน</p>
+    <p>พัฒนาโดย Dr. Franz Karl Naegele ในปี ค.ศ. 1812 ใช้มากว่า 200 ปี ถือว่าการตั้งครรภ์ใช้เวลา 280 วัน (40 สัปดาห์) นับจากวันแรกของประจำเดือนครั้งสุดท้าย แม้มีอัลตราซาวด์แล้ว แพทย์ยังใช้สูตรนี้เป็นจุดเริ่มต้น</p>
     <h2>พัฒนาการทารกแต่ละไตรมาส</h2>
-    <p><strong>ไตรมาสแรก (1–12 สัปดาห์)</strong> หัวใจเริ่มเต้น อวัยวะทุกส่วนเริ่มก่อตัว แม่มักมีอาการแพ้ท้อง <strong>ไตรมาสสอง (13–27 สัปดาห์)</strong> ทารกเริ่มดิ้น ตรวจเพศได้ แม่เริ่มสบายขึ้น <strong>ไตรมาสสาม (28–40 สัปดาห์)</strong> ทารกเติบโตเต็มที่ น้ำหนักเพิ่มเร็ว เตรียมพร้อมคลอด</p>
+    <p><strong>ไตรมาสแรก (1–12 สัปดาห์)</strong> หัวใจเริ่มเต้น อวัยวะทุกส่วนเริ่มก่อตัว แม่มักมีอาการแพ้ท้อง / <strong>ไตรมาสสอง (13–27 สัปดาห์)</strong> ทารกเริ่มดิ้น ตรวจเพศได้ แม่เริ่มสบายขึ้น / <strong>ไตรมาสสาม (28–40 สัปดาห์)</strong> ทารกเติบโตเต็มที่ น้ำหนักเพิ่มเร็ว เตรียมพร้อมคลอด</p>
   </div>
 
-  <!-- Related -->
   <div class="related-wrap">
-    <div class="related-lbl">เครื่องมือที่เกี่ยวข้อง</div>
+    <div class="related-title">เครื่องมือที่เกี่ยวข้อง</div>
     <div class="related-grid">
-      <a class="related-card" href="/kamnuanbmi/">
-        <div class="related-ico"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div>
-        <span class="related-name">คำนวณ BMI</span>
-      </a>
-      <a class="related-card" href="/kamnuanaayu/">
-        <div class="related-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
-        <span class="related-name">คำนวณอายุ</span>
-      </a>
-      <a class="related-card" href="/kamnuankcal/">
-        <div class="related-ico"><svg viewBox="0 0 24 24"><path d="M8.56 2.9A7 7 0 0 1 19 9v2h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2h1V9a7 7 0 0 1 2.56-6.1"/></svg></div>
-        <span class="related-name">คำนวณแคลอรี่ TDEE</span>
-      </a>
-      <a class="related-card" href="/kamnuannamnak/">
-        <div class="related-ico"><svg viewBox="0 0 24 24"><path d="M12 22V12M12 12V2M12 12H2M12 12h10"/></svg></div>
-        <span class="related-name">แปลงหน่วยน้ำหนัก</span>
-      </a>
+      <a class="related-card" href="/kamnuanbmi/"><div class="related-ico"><svg viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg></div><span class="related-name">คำนวณ BMI</span></a>
+      <a class="related-card" href="/kamnuanaayu/"><div class="related-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div><span class="related-name">คำนวณอายุ</span></a>
+      <a class="related-card" href="/kamnuanbmidek/"><div class="related-ico"><svg viewBox="0 0 24 24"><circle cx="12" cy="5" r="2"/><line x1="12" y1="7" x2="12" y2="13"/><line x1="9" y1="10" x2="15" y2="10"/><line x1="9" y1="20" x2="12" y2="13"/><line x1="15" y1="20" x2="12" y2="13"/></svg></div><span class="related-name">BMI เด็ก</span></a>
+      <a class="related-card" href="/kamnuankcal/"><div class="related-ico"><svg viewBox="0 0 24 24"><path d="M8.56 2.9A7 7 0 0 1 19 9v2h1a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-6a2 2 0 0 1 2-2h1V9a7 7 0 0 1 2.56-6.1"/></svg></div><span class="related-name">คำนวณแคลอรี่</span></a>
     </div>
   </div>
-</main>
+</div>
 
 <footer role="contentinfo">
-  <p>© 2569 คำนวณ <a href="/">หน้าหลัก</a> <a href="/privacy.html">นโยบายความเป็นส่วนตัว</a></p>
+  <p>© 2569 คำนวณ · <a href="/">หน้าหลัก</a> · <a href="/about.html">เกี่ยวกับเรา</a> · <a href="/privacy.html">นโยบายความเป็นส่วนตัว</a> · <a href="/terms.html">เงื่อนไข</a> · <a href="/contact.html">ติดต่อ</a></p>
 </footer>
 
 <script>
-/* Theme */
-function initTheme(){const s=localStorage.getItem('theme'),p=matchMedia('(prefers-color-scheme:dark)').matches;applyT(s||(p?'dark':'light'));}
-function applyT(t){document.documentElement.setAttribute('data-theme',t);document.getElementById('iSun').style.display=t==='dark'?'block':'none';document.getElementById('iMoon').style.display=t==='light'?'block':'none';document.getElementById('darkBtn').setAttribute('aria-label',t==='dark'?'เปลี่ยนเป็นโหมดสว่าง':'เปลี่ยนเป็นโหมดสีเข้ม');localStorage.setItem('theme',t);}
-function toggleDark(){applyT(document.documentElement.getAttribute('data-theme')==='dark'?'light':'dark');}
-initTheme();
-
-/* FAQ */
 function toggleFaq(btn){const e=btn.getAttribute('aria-expanded')==='true';btn.setAttribute('aria-expanded',String(!e));btn.nextElementSibling.classList.toggle('open',!e);}
 
-/* Init selects */
-const MONTHS=['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม'];
+const MONTHS_TH=['มกราคม','กุมภาพันธ์','มีนาคม','เมษายน','พฤษภาคม','มิถุนายน','กรกฎาคม','สิงหาคม','กันยายน','ตุลาคม','พฤศจิกายน','ธันวาคม'];
+const MONTHS_SHORT=['ม.ค.','ก.พ.','มี.ค.','เม.ย.','พ.ค.','มิ.ย.','ก.ค.','ส.ค.','ก.ย.','ต.ค.','พ.ย.','ธ.ค.'];
+
+// Build day/month selects
 const dayEl=document.getElementById('inDay');
 const monEl=document.getElementById('inMonth');
-for(let d=1;d<=31;d++) dayEl.innerHTML+=`<option value="${d}">${d}</option>`;
-MONTHS.forEach((m,i)=>monEl.innerHTML+=`<option value="${i+1}">${m}</option>`);
-
-document.getElementById('yearEra').addEventListener('change',function(){
-  const isBE=this.value==='BE';
-  document.getElementById('inYear').placeholder=isBE?'2568':'2025';
-});
+for(let i=1;i<=31;i++){const o=document.createElement('option');o.value=i;o.textContent=i;dayEl.appendChild(o);}
+MONTHS_TH.forEach((m,i)=>{const o=document.createElement('option');o.value=i+1;o.textContent=m;monEl.appendChild(o);});
 
 let method='lmp';
 function setMethod(m){
   method=m;
   document.getElementById('tab-lmp').classList.toggle('on',m==='lmp');
   document.getElementById('tab-con').classList.toggle('on',m==='conception');
-  document.getElementById('dateLabel').textContent=m==='lmp'?'วันแรกของประจำเดือนครั้งสุดท้าย (LMP)':'วันที่ตั้งครรภ์ (โดยประมาณ)';
-  document.getElementById('methodHint').textContent=m==='lmp'?'วันแรกของรอบประจำเดือนล่าสุด ก่อนตั้งครรภ์':'วันที่ตรวจพบหรือประมาณวันที่ตั้งครรภ์';
+  document.getElementById('dateLabel').textContent=m==='lmp'?'วันแรกของประจำเดือนครั้งสุดท้าย':'วันที่ตั้งครรภ์ (โดยประมาณ)';
+  document.getElementById('methodHint').textContent=m==='lmp'?'วันแรกของรอบประจำเดือนก่อนตั้งครรภ์':'วันที่ตรวจพบหรือประมาณวันที่ตั้งครรภ์';
   document.getElementById('resultBox').style.display='none';
+}
+
+function updateYearLabel(){
+  document.getElementById('yearEraLabel').textContent=document.getElementById('yearEra').value==='BE'?'พ.ศ.':'ค.ศ.';
 }
 
 function getDevInfo(w){
@@ -439,18 +315,23 @@ function getDevInfo(w){
   return{title:'ไตรมาสที่ 3 — สัปดาห์ที่ 28–40',items:['ทารกเติบโตรวดเร็ว น้ำหนักเพิ่มมาก','ทารกกลับหัวเตรียมพร้อมคลอด','แม่อาจรู้สึกหนักและเหนื่อยมากขึ้น','ควรเตรียมของใช้ทารกและวางแผนการคลอด']};
 }
 
-const hist=JSON.parse(localStorage.getItem('klodHist')||'[]');
+const hist=[];
+try{const h=JSON.parse(localStorage.getItem('kamnuan_klodHist')||'[]');hist.push(...h);}catch(e){}
 
 function calculate(){
   const day=parseInt(dayEl.value);
   const mon=parseInt(monEl.value);
-  const year=parseInt(document.getElementById('inYear').value);
+  const yearRaw=parseInt(document.getElementById('inYear').value);
   const era=document.getElementById('yearEra').value;
-  if(!day||!mon||!year){alert('กรุณาเลือกวัน เดือน และกรอกปีให้ครบ');return;}
-  const yearCE=era==='BE'?year-543:year;
-  if(yearCE<2000||yearCE>2040){alert('กรุณากรอกปีที่ถูกต้อง');return;}
+  const err=document.getElementById('calcError');
+
+  if(!day||!mon||!yearRaw){err.textContent='กรุณาเลือกวัน เดือน และกรอกปีให้ครบ';err.style.display='block';return;}
+  const yearCE=era==='BE'?yearRaw-543:yearRaw;
+  if(yearCE<2000||yearCE>2040){err.textContent='กรุณากรอกปีที่ถูกต้อง';err.style.display='block';return;}
+  err.style.display='none';
+
   const inputDate=new Date(yearCE,mon-1,day);
-  const today=new Date(); today.setHours(0,0,0,0);
+  const today=new Date();today.setHours(0,0,0,0);
   const days=method==='lmp'?280:266;
   const dueDate=new Date(inputDate.getTime()+days*86400000);
   const lmpDate=method==='lmp'?inputDate:new Date(inputDate.getTime()-14*86400000);
@@ -460,35 +341,37 @@ function calculate(){
   const daysLeft=Math.ceil((dueDate-today)/86400000);
   const pct=Math.round((Math.min(280,Math.max(0,daysSinceLmp))/280)*100);
   const dueBE=dueDate.getFullYear()+543;
-  const dueDateStr=`${dueDate.getDate()} ${MONTHS[dueDate.getMonth()]} ${dueBE}`;
+  const dueDateStr=`${dueDate.getDate()} ${MONTHS_TH[dueDate.getMonth()]} ${dueBE}`;
+
   let trimNum=1,trimSub='สัปดาห์ที่ 1–12';
   if(weeksPreg>=28){trimNum=3;trimSub='สัปดาห์ที่ 28–40';}
   else if(weeksPreg>=13){trimNum=2;trimSub='สัปดาห์ที่ 13–27';}
 
   document.getElementById('dueDateBig').textContent=dueDateStr;
-  document.getElementById('resultSub').innerHTML=`คำนวณตาม<strong>กฎของ Naegele</strong> อาจเร็วหรือช้ากว่า 2 สัปดาห์`;
+  document.getElementById('resultSub').textContent='คำนวณตามกฎของ Naegele อาจเร็วหรือช้ากว่า 2 สัปดาห์';
   document.getElementById('weeksPreg').textContent=weeksPreg;
-  document.getElementById('daysPreg').textContent=`+${daysPreg} วัน`;
+  document.getElementById('daysPreg').textContent=daysPreg>0?`+${daysPreg} วัน`:'ครบสัปดาห์';
   document.getElementById('trimester').textContent=trimNum;
   document.getElementById('trimesterSub').textContent=trimSub;
   document.getElementById('progressPct').textContent=pct+'%';
   setTimeout(()=>{document.getElementById('progressBar').style.width=pct+'%';},100);
 
   if(daysLeft<=0){
-    document.getElementById('countdownNum').textContent='ถึงแล้ว';
+    document.getElementById('countdownNum').textContent='ถึงแล้ว!';
     document.getElementById('countdownMsg').textContent='ขอให้คลอดง่ายและปลอดภัยนะคะ';
   } else {
     document.getElementById('countdownNum').textContent=daysLeft;
-    document.getElementById('countdownMsg').textContent=`วันจนถึงกำหนดคลอด ${dueDateStr}`;
+    document.getElementById('countdownMsg').textContent='วัน จนถึงกำหนดคลอด '+dueDateStr;
   }
 
   const dev=getDevInfo(weeksPreg);
   document.getElementById('devTitle').textContent=dev.title;
-  document.getElementById('devList').innerHTML=dev.items.map(t=>`<div class="dev-item"><div class="dev-dot" aria-hidden="true"></div><span>${t}</span></div>`).join('');
+  document.getElementById('devList').innerHTML=dev.items.map(t=>`<div class="dev-item"><div class="dev-dot"></div><span>${t}</span></div>`).join('');
 
-  hist.unshift({due:dueDateStr,detail:`อายุครรภ์ ${weeksPreg} สัปดาห์ ไตรมาสที่ ${trimNum}`,t:new Date().toLocaleTimeString('th-TH',{hour:'2-digit',minute:'2-digit'})});
+  const t=new Date().toLocaleTimeString('th-TH',{hour:'2-digit',minute:'2-digit'});
+  hist.unshift({main:'กำหนดคลอด '+dueDateStr,sub:`อายุครรภ์ ${weeksPreg} สัปดาห์ ไตรมาสที่ ${trimNum}`,t});
   if(hist.length>5)hist.pop();
-  localStorage.setItem('klodHist',JSON.stringify(hist));
+  try{localStorage.setItem('kamnuan_klodHist',JSON.stringify(hist));}catch(e){}
   renderHist();
 
   const box=document.getElementById('resultBox');
@@ -499,13 +382,9 @@ function calculate(){
 function renderHist(){
   const el=document.getElementById('histList');
   if(!hist.length){el.innerHTML='<div class="h-empty">ยังไม่มีประวัติ</div>';return;}
-  el.innerHTML=hist.slice(0,5).map(h=>`
-    <div class="h-item">
-      <div class="h-main">กำหนดคลอด ${h.due}</div>
-      <div class="h-sub">${h.detail} ${h.t}</div>
-    </div>`).join('');
+  el.innerHTML=hist.map(h=>`<div class="h-item"><div class="h-main">${h.main}</div><div class="h-sub">${h.sub} — ${h.t}</div></div>`).join('');
 }
-function clearHist(){hist.length=0;localStorage.removeItem('klodHist');renderHist();}
+function clearHist(){hist.length=0;try{localStorage.removeItem('kamnuan_klodHist');}catch(e){}renderHist();}
 renderHist();
 </script>
 </body>
